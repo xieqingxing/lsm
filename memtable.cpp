@@ -153,3 +153,13 @@ void search_result::print() {
     std::cout << "res_code: " << res_code << std::endl;
     i.print();
 }
+
+std::string search_result::to_string() {
+    std::string st = "";
+    if(res_code == -1){
+        st = "res_code -1";
+        return st;
+    }
+    st += "value: " + i.value;
+    return st;
+}

@@ -18,6 +18,7 @@ public:
     item i;
     int res_code;
     void print();
+    std::string to_string();
 };
 
 class memtable {
